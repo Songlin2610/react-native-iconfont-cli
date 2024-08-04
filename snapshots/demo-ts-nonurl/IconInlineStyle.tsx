@@ -26,14 +26,10 @@ const xml = `
 </svg>
 `
 
-let IconInlineStyle: FunctionComponent<Props> = ({ size, color, ...rest }) => {
+let IconInlineStyle: FunctionComponent<Props> = ({ size = 20, color, ...rest }) => {
   return (
     <SvgCss xml={xml}  width={size} height={size} {...rest} />
   );
-};
-
-IconInlineStyle.defaultProps = {
-  size: 20,
 };
 
 IconInlineStyle = React.memo ? React.memo(IconInlineStyle) : IconInlineStyle;

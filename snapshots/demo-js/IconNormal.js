@@ -9,14 +9,10 @@ const xml = `
 </svg>
 `
 
-let IconNormal = ({ size, color, ...rest }) => {
+let IconNormal = ({ size = 18, color, ...rest }) => {
   return (
     <SvgXml xml={xml}  width={size} height={size} {...rest} />
   );
-};
-
-IconNormal.defaultProps = {
-  size: 18,
 };
 
 IconNormal = React.memo ? React.memo(IconNormal) : IconNormal;
