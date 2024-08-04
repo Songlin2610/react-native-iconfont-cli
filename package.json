@@ -10,8 +10,8 @@
     "icons",
     "iconfont.cn"
   ],
-  "repository": "git@github.com:iconfont-cli/react-native-iconfont-cli.git",
-  "author": "范文华 <531362022@qq.com>",
+  "repository": "git@github.com:Songlin2610/react-native-iconfont-cli.git",
+  "author": "SonglinBai <songlin2610@outlook.com>",
   "license": "MIT",
   "bin": {
     "iconfont": "./commands/help.js",
